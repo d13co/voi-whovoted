@@ -1,22 +1,24 @@
 # Voi "who voted" script
 
-Installation:
+
+## Description
+
+Outputs proposer and voters for a given block on voi-testv1 network
+
+node configurable with env vars: ALGOD_HOST ALGOD_PORT ALGOD_TOKEN
+
+## Installation
 
 ```
 npm i # or yarn
 ```
 
-Run:
+## Run
 
 ```
 node index.js <round>
 ```
 
-Optionally pass your address to see if it is included:
-
-```
-node index.js <round> <your_address>
-```
 
 Exmaple:
 
@@ -37,7 +39,13 @@ EWR6E4FO4ZEEHPR2EA26UI4UO5CH7F5PQHN52KYDWLSSTE6VBBEMYR2VOI
 ITEUFNBM7KHRIKMTUIFLYOG4F73LICYSMHKO3PHCB7HXLIBOFJZD6W2VOI
 ```
 
-With address:
+Optionally pass your address to see if it is included:
+
+```
+node index.js <round> <your_address>
+```
+
+Example:
 
 ```
 node index.js 27000 WEAKNODEZXOBMGNQ56UIBFSGYHJLFPBTGQ7LJJYQFFYCZTDZ4AMRUYYFLU
